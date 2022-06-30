@@ -47,17 +47,17 @@
     "aura",
     "icon",
     "svg",
-    "web component",
     "component",
+    "web component",
     "custom element"
   ],
   "author": {"name": "yoydev", "url": "https://lac617a.github.io/yoydev.github.io/"},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/ionicons.git"
+    "url": "https://github.com/lac617a/auraicon.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/ionicons/issues"
+    "url": "https://github.com/lac617a/auraicon/issues"
   },
   "license": "MIT"
 }
