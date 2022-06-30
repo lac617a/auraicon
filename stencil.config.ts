@@ -2,20 +2,29 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'auraicon',
+  buildEs5: 'prod',
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      empty: false,
     },
     {
       type: 'dist-custom-elements',
+      dir: './components',
     },
     {
       type: 'docs-readme',
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      copy: [
+        {
+          src: './components/test/*.svg',
+          dest: './assets/',
+        },
+      ],
+      empty: false,
+      serviceWorker: false, // disable service workers
     },
   ],
 };

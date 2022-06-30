@@ -7,6 +7,39 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AuraIcon {
+        /**
+          * The color to use for the background of the item.
+         */
+        "color"?: string;
+        /**
+          * Specifies whether the icon should horizontally flip when `dir` is `rtl`.
+         */
+        "flipRtl"?: boolean;
+        /**
+          * A combination of both `name` and `src`. If a `src` url is detected it will set `src` property. Otherwise it assumes it's built-in named SVG and set the `name` property
+         */
+        "icon"?: any;
+        /**
+          * If enabled, aura-icon will be loaded lazily when it's visible in the viewport. Default: `false`.
+         */
+        "lazy": boolean;
+        /**
+          * Specifies which icon to use from the built-in set of icon
+         */
+        "name"?: string;
+        /**
+          * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.
+          * @default true
+         */
+        "sanitize": boolean;
+        /**
+          * The size the icon. Available options are: `small` and `large`.
+         */
+        "size"?: string;
+        /**
+          * Specifies the exact `src` of an SVG file to use
+         */
+        "src"?: string;
     }
 }
 declare global {
@@ -22,6 +55,39 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AuraIcon {
+        /**
+          * The color to use for the background of the item.
+         */
+        "color"?: string;
+        /**
+          * Specifies whether the icon should horizontally flip when `dir` is `rtl`.
+         */
+        "flipRtl"?: boolean;
+        /**
+          * A combination of both `name` and `src`. If a `src` url is detected it will set `src` property. Otherwise it assumes it's built-in named SVG and set the `name` property
+         */
+        "icon"?: any;
+        /**
+          * If enabled, aura-icon will be loaded lazily when it's visible in the viewport. Default: `false`.
+         */
+        "lazy"?: boolean;
+        /**
+          * Specifies which icon to use from the built-in set of icon
+         */
+        "name"?: string;
+        /**
+          * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.
+          * @default true
+         */
+        "sanitize"?: boolean;
+        /**
+          * The size the icon. Available options are: `small` and `large`.
+         */
+        "size"?: string;
+        /**
+          * Specifies the exact `src` of an SVG file to use
+         */
+        "src"?: string;
     }
     interface IntrinsicElements {
         "aura-icon": AuraIcon;

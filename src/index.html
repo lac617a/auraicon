@@ -3,11 +3,143 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>Auraicons Icon Component</title>
 
     <script type="module" src="/build/auraicon.esm.js"></script>
     <script nomodule src="/build/auraicon.js"></script>
   </head>
   <body>
+    <h1>Auraicons</h1>
+
+    <h2>Default</h2>
+    <aura-icon name="cellular"></aura-icon>
+    <aura-icon name="alert-circle"></aura-icon>
+    <aura-icon name="call"></aura-icon>
+    <aura-icon name="football"></aura-icon>
+    <aura-icon name="analytics"></aura-icon>
+    <aura-icon name="grid"></aura-icon>
+    <aura-icon name="funnel"></aura-icon>
+    <aura-icon name="add-circle"></aura-icon>
+
+    <h2>Colors</h2>
+    <aura-icon color="primary" name="cellular"></aura-icon>
+    <aura-icon color="secondary" name="alert-circle"></aura-icon>
+    <aura-icon color="tertiary" name="call"></aura-icon>
+    <aura-icon color="success" name="football"></aura-icon>
+    <aura-icon color="warning" name="analytics"></aura-icon>
+    <aura-icon color="danger" name="grid"></aura-icon>
+    <aura-icon color="light" name="funnel"></aura-icon>
+    <aura-icon color="dark" name="book"></aura-icon>
+
+    <h2>Stroke width</h2>
+    <aura-icon name="heart" style="--auraicon-stroke-width: 8px"></aura-icon>
+
+    <h2>Font size</h2>
+    <aura-icon name="book" style="font-size: 50px"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg" style="font-size: 50px"></aura-icon>
+
+    <h2>Custom SVGs</h2>
+    <aura-icon src="./assets/accessibility-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon src="./assets/add-circle-outline.svg"></aura-icon>
+
+    <h2>Custom SVGs: colors</h2>
+    <aura-icon color="primary" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="secondary" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="tertiary" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="success" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="warning" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="danger" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="light" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="medium" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon color="dark" src="./assets/add-circle-outline.svg"></aura-icon>
+
+    <h2>Custom CSS</h2>
+    <aura-icon class="custom" name="grid"></aura-icon>
+    <aura-icon class="custom" name="funnel"></aura-icon>
+    <aura-icon class="custom" name="watch"></aura-icon>
+    <aura-icon class="custom" name="logo-react"></aura-icon>
+    <aura-icon class="custom" name="logo-javascript"></aura-icon>
+    <aura-icon class="custom" name="logo-angular"></aura-icon>
+    <aura-icon class="custom" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon class="custom" src="./assets/add-circle-outline.svg"></aura-icon>
+    <aura-icon class="custom" src="./assets/add-circle-outline.svg"></aura-icon>
+
+    <h2>Aria</h2>
+    <aura-icon name="cellular"></aura-icon>
+    <aura-icon name="cellular" aria-label="Mobile data"></aura-icon>
+    <aura-icon name="cellular" aria-hidden="true"></aura-icon>
+
+    <h1>RTL</h1>
+
+    <h2>Default: Non-arrows</h2>
+    <aura-icon small name="cut"></aura-icon>
+    <aura-icon name="call"></aura-icon>
+    <aura-icon name="checkbox"></aura-icon>
+    <aura-icon name="brush"></aura-icon>
+
+    <h2>Flip: Non-arrows</h2>
+    <aura-icon name="cut" flip-rtl></aura-icon>
+    <aura-icon name="call" flip-rtl></aura-icon>
+    <aura-icon name="checkbox" flip-rtl></aura-icon>
+    <aura-icon name="brush" flip-rtl></aura-icon>
+
+    <h2>Auto Flip: arrows</h2>
+    <aura-icon name="arrow-up"></aura-icon>
+    <aura-icon name="arrow-forward"></aura-icon>
+    <aura-icon name="arrow-down"></aura-icon>
+    <aura-icon name="arrow-back"></aura-icon>
+
+    <h2>Un-flip: arrows</h2>
+    <aura-icon name="arrow-up" flip-rtl="false"></aura-icon>
+    <aura-icon name="arrow-forward" flip-rtl="false"></aura-icon>
+    <aura-icon name="arrow-down" flip-rtl="false"></aura-icon>
+    <aura-icon name="arrow-back" flip-rtl="false"></aura-icon>
+
+    <h2>Auto Flip: chevrons</h2>
+    <aura-icon name="chevron-up"></aura-icon>
+    <aura-icon name="chevron-forward"></aura-icon>
+    <aura-icon name="chevron-down"></aura-icon>
+    <aura-icon name="chevron-back"></aura-icon>
+
+    <h2>Un-flip: chevrons</h2>
+    <aura-icon name="chevron-up" flip-rtl="false"></aura-icon>
+    <aura-icon name="chevron-forward" flip-rtl="false"></aura-icon>
+    <aura-icon name="chevron-down" flip-rtl="false"></aura-icon>
+    <aura-icon name="chevron-back" flip-rtl="false"></aura-icon>
+
+    <p>
+      <a href="./cheatsheet.html">Cheatsheet</a>
+    </p>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        font-size: 32px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        margin: 15px 0 5px;
+        font-size: 25px;
+      }
+
+      h2 {
+        margin: 15px 0 5px;
+        font-size: 18px;
+      }
+
+      .custom {
+        stroke: red;
+        fill: blue;
+      }
+    </style>
   </body>
 </html>
